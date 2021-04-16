@@ -41,5 +41,12 @@ team.addGame('Liverpool', 4, 3);
 team.addGame('FC Barcelona', 3, 0);
 team.addGame('Real Madrid', 6, 1);
 
-console.log(team.players);
-console.log(team.games);
+
+let indexG = 0;
+while (indexG < team.games.length){
+const opp = team.games[indexG].opponent;
+const tP = team.games[indexG].teamPoints;
+const oP = team.games[indexG].opponentPoints;
+console.log(`Opponent:${opp} | Team Points:${tP} | Opponent Points: ${oP}`);
+indexG++;
+}
